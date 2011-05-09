@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--<meta http-equiv="Content-Language" content="nl-BE"> Only use if site is in non US english -->
+  <!--<meta name="Language" content="english"> Only use if site is in non US english -->
+  <meta charset="utf-8" />
+  <meta name="description" content="">
+
+  <title>jQuery fieldReset</title>
+
+  <script src="http://www.google.com/jsapi?key="></script>
+  <script type="text/javascript">
+    google.load("jquery", "1.5");
+  </script>
+  <script src="jquery-fieldreset.js"></script>
+  <script>
+    $(function(){
+      $("#email").fieldreset({
+        default_value: "Your email"
+      });
+    })
+  </script>
+</head>
+<body>
+<form action="">
+  <label for="email">Email</label>
+  <input id="email" name="email" type="text" />
+</form>
+</body>
+</html>
